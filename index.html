@@ -25,12 +25,12 @@
             text-decoration: line-through;
         }
 
-        .outras-divs{
+        .outras-divs {
             color: yellow;
             background-color: green;
         }
 
-        .bloco{
+        .bloco {
             width: 5rem;
             height: 5rem;
             border-radius: .5rem;
@@ -39,51 +39,53 @@
             margin: 1rem;
             padding: 1rem;
         }
-        
+
         .barra {
             background-color: #000059;
             color: yellow;
             padding: 1rem;
             margin: 1rem;
         }
-        
+
         .faixa {
             background-color: yellow;
             color: #000059;
             padding: 1rem;
             margin: 1rem;
         }
-        
-        #tora{
+
+        #tora {
             background-color: #aa002b;
             color: rgb(2, 139, 36);
-              }
-              .madeira {
-                background-color: rgb(122, 44, 44);
-                color: #ffdc6a;
-              }
-              .conteiner {
-                height: 30rem;
-                border: solid 1px rgb(0, 0, 0);
-                border-radius: .5rem;
-                padding: 1rem;
-                box-shadow: .5rem .5rem .3rem #000059;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-              }
-              .item {
-                width: 4rem;
-                height: 4rem;
-                border: .1rem solid #2aff58;
-                border-radius: .5rem;
-                color: #31ff5e;
-                background-color: #dffce6;
-                margin: 1rem;
-                padding: 1rem;
-                
-              }
+        }
 
+        .madeira {
+            background-color: rgb(122, 44, 44);
+            color: #ffdc6a;
+        }
+
+        .conteiner {
+            height: 30rem;
+            border: solid 1px rgb(0, 0, 0);
+            border-radius: .5rem;
+            padding: 1rem;
+            box-shadow: .5rem .5rem .3rem #000059;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .item {
+            width: 4rem;
+            height: 4rem;
+            border: .1rem solid #2aff58;
+            border-radius: .5rem;
+            color: #31ff5e;
+            background-color: #dffce6;
+            margin: 1rem;
+            padding: 1rem;
+
+        }
     </style>
 </head>
 
@@ -116,26 +118,39 @@
     <div class="barra faixa">
         Esta é a sexta div
     </div>
- <div class="banda fita">Esta é a sétima div</div>
- <div class="fita banda">Esta é a oitava div</div>
+    <div class="banda fita">Esta é a sétima div</div>
+    <div class="fita banda">Esta é a oitava div</div>
 
- <div id="tora" class="madeira">
-    Esta é a nona div
- </div>
- <div class="conteiner">
-     <div class="item">Item 01</div>
-     <div class="item">Item 02</div>
-    <div class="item">Item 03</div>
-    <div class="item">Item 04</div>
-    <div class="item">Item 05</div>
-   <div class="item">Item 06</div> 
-   <div class="item">Item 07</div>
-   <div class="item">Item 08</div>
-  <div class="item">Item 09</div> 
-  <div class="item">Item 10</div>
-  <div class="item">Item 11</div>
- <div class="item">Item 12</div>
- </div>
+    <div id="tora" class="madeira">
+        Esta é a nona div
+    </div>
+    <div class="conteiner">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+    </div>
+
+    <script>
+        alert("Olá, Mundo! Eu sou um alerta!");
+        document.write("Olá, mundo! Eu sou um documento.write();")
+        console.log("ola mundo eu sou um console")
+        document.getElementById("primeira-div").innerHTML="Ola mundo, Eu sou um documente.elementebyid";
+        
+        var nome = prompt("informe o seu nome:");
+        document.getElementById("primeira-div").innerHTML = "O seu nome é" + nome";
+        alert("O seu nome é:" + nome);
+        console.log("O seu nome é:" + nome");
+
+    </script>
 </body>
 
 </html>
